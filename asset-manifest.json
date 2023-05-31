@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ashirma.github.io/static/css/main.6d719f38.css",
+    "main.js": "/Ashirma.github.io/static/js/main.91b50e60.js",
+    "static/media/logout-icon.webp": "/Ashirma.github.io/static/media/logout-icon.18238a684b7e027bc657.webp",
+    "static/media/signin-image.jpg": "/Ashirma.github.io/static/media/signin-image.9d99a251087595c66611.jpg",
+    "index.html": "/Ashirma.github.io/index.html",
+    "main.6d719f38.css.map": "/Ashirma.github.io/static/css/main.6d719f38.css.map",
+    "main.91b50e60.js.map": "/Ashirma.github.io/static/js/main.91b50e60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d719f38.css",
+    "static/js/main.91b50e60.js"
+  ]
+}
