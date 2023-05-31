@@ -1,0 +1,28 @@
+[debug] [2023-05-23T13:07:13.543Z] ----------------------------------------------------------------------
+[debug] [2023-05-23T13:07:13.545Z] Command:       /Users/naoki/.volta/tools/image/node/18.16.0/bin/node /Users/naoki/firebase-google-login/node_modules/.bin/firebase init functions
+[debug] [2023-05-23T13:07:13.545Z] CLI Version:   12.1.0
+[debug] [2023-05-23T13:07:13.545Z] Platform:      darwin
+[debug] [2023-05-23T13:07:13.546Z] Node Version:  v18.16.0
+[debug] [2023-05-23T13:07:13.547Z] Time:          Tue May 23 2023 22:07:13 GMT+0900 (日本標準時)
+[debug] [2023-05-23T13:07:13.547Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-23T13:07:13.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-23T13:07:13.552Z] > authorizing via signed-in user (shima055015@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/naoki/firebase-google-login
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
