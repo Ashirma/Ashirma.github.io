@@ -1,0 +1,255 @@
+@import 'App.css';
+
+.App {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+body {
+  margin: 0;
+}
+
+.default-page {
+  padding-top: 50px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.signin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.signin-form-container {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.signin-image-container {
+  flex: 50%;
+}
+
+.signin-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* To make sure the image covers the entire container */
+}
+
+.logout-icon {
+  width: 25px;  /* 幅を20ピクセルに設定 */
+  height: 25px;  /* 高さを20ピクセルに設定 */
+}
+
+.send-button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+
+.messages-container {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sent {
+  align-items: flex-end;
+}
+
+.message {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 60%;  /* 最大幅を保持しつつ */
+  min-width: 20%;  /* 最小幅を設定 */
+  width: auto;     /* 幅を自動に設定 */
+  word-break: break-word;
+  display: flex;   /* Flexboxに変更 */
+  align-items: center; /* アイテムを中央揃え */
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* テキストとユーザー名を左寄せ */
+  margin-left: 10px; /* アイコンとの間にスペースを追加 */
+}
+
+.sent .message::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0ac0ac;
+  margin-left: 10px;
+}
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  height: calc(70vh - 50px - 30px - 30px); /* Subtract header height and top & bottom margin */
+  overflow-y: auto; /* Add this to enable scrolling inside the chatroom */
+  padding: 110px 60px 60px 60px;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-top: 2px solid #000; /* Add a border to the top */
+  border-left: 2px solid #000; /* Add a border to the left */
+  border-right: 2px solid #000; /* Add a border to the right */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.message-form {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 2px solid #000; /* Add a border to the bottom */
+  border-left: 2px solid #000; /* Add a border to the left */
+  border-right: 2px solid #000; /* Add a border to the right */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.message-input {
+  flex: 1;
+  margin-right: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;  /* Flexbox を使用 */
+  justify-content: space-between;  /* 左右の要素間にスペースを最大限に */
+  align-items: center;  /* 垂直方向中央に配置 */
+  padding-left:1rem;  /* 左右の内側余白を追加 */
+  position: fixed;  /* Fix the header to the top */
+  top: 0;  /* Stick the header to the top */
+  z-index: 1;  /* Ensure the header is always on top */
+  box-sizing: border-box;  /* paddingを含む全体の幅・高さを指定 */
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-link > * {
+  margin-right: 1rem;  /* 子要素間に1remのスペースを追加 */
+}
+
+.profile-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px; /* 画像とテキストの間にスペースを追加 */
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-text {
+  text-align: right;
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user-name {
+  margin-top: 20px;
+}
+
+.contact-container {
+  padding: 110px 60px 60px 60px;
+}
+
+.app-title {
+  cursor: pointer;
+  /* その他のスタイル */
+}
+
+.chatroom-userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo button {
+  margin-top: 10px;
+  width: 70px; /* Adjust this value to fit the width of the Age field */
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+.modal-user-name {
+  text-align: right;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.modal-cancel-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-submit-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
